@@ -44,10 +44,21 @@ function regis() {
     let username = document.getElementById("user_name").value;
     let userage = document.getElementById("user_age").value;
     let usernumber = document.getElementById("user_number").value;
-    users["username"] = username;
-    users["userage"] = userage;
-    users["usernumber"] = usernumber;
-    alert(`Siz ro'yxatdan o'tdingiz`);
-    
-    
+
+
+    if (username == "" && userage == "" && usernumber == "") {
+        alert("Maydonni to`liq to`ldiring");
+    } else{
+        users["username"] = username;
+        users["userage"] = userage;
+        users["usernumber"] = usernumber;
+        alert(`Siz ro'yxatdan o'tdingiz`);   
+        location.replace("https://kurbonovbnpz.netlify.app/")
+    }
+
+
+
+
+
+
 }
